@@ -1,9 +1,5 @@
 # Does gradient boosting beat logistic regression out of time?
 
-**Mortgage default prediction on Freddie Mac loan-level data, 2000–2023**
-
-> **TODO after the full run:** two or three sentences with the headline answer, e.g. the out-of-time AUC of each model, whether the gain is statistically meaningful, and the verdict on interpretability. Numbers come from `reports/results.md`.
-
 ## Question
 
 Gradient boosting usually beats logistic regression on a random test split. But credit models are built on past loans and used on future ones, and the economy changes in between. This project asks:
