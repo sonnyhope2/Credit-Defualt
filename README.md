@@ -1,9 +1,12 @@
 # Does gradient boosting beat logistic regression out of time?
 
+<<<<<<< HEAD
 **Mortgage default prediction on Freddie Mac loan-level data, 2000–2024 vintages**
 
 Trained on loans originated in 2000–2012 and tested on loans originated in 2015–2017, LightGBM barely beats logistic regression: out-of-time AUC 0.801 against 0.799, a gain whose 95% bootstrap interval (-0.004 to +0.008) includes zero. A monotone-constrained LightGBM does slightly better (AUC 0.805, gain +0.007, interval +0.0004 to +0.013), and its edge widens on the 2022–2024 vintages. But every model loses about 0.06 AUC between an in-time and an out-of-time test, and every model over-predicts defaults about twofold. Out of time, the change in economic conditions matters far more than the choice of algorithm.
 
+=======
+>>>>>>> 5caaaa11f13c80778c98255c15d96114a93a479b
 ## Question
 
 Gradient boosting usually beats logistic regression on a random test split. But credit models are built on past loans and used on future ones, and the economy changes in between. This project asks:
@@ -60,7 +63,7 @@ Only information known at origination, so nothing leaks the outcome:
 
 The binned logistic regression gives the interpretable side a fair chance by letting it capture non-linear effects. The monotone LightGBM is a middle ground that a model validator would find easier to sign off.
 
-No resampling or class weights are used. Rebalancing would distort the predicted probabilities, and probabilities, not just rankings, are what a lender prices and provisions with. Regularisation strength (logistic regression) and tree settings (LightGBM, with early stopping) are chosen on validation AUC.
+No resampling or class weights are used. Rebalancing would distort the predicted probabilities, and probabilities are what a lender prices and provisions with. Regularisation strength (logistic regression) and tree settings (LightGBM, with early stopping) are chosen on validation AUC.
 
 ### Evaluation
 
