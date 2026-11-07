@@ -1,0 +1,10 @@
+# Freddie Mac data may not be redistributed: keep raw and processed data out of git
+data/
+models/
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store

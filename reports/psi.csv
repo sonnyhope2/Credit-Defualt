@@ -1,0 +1,11 @@
+variable,psi,reading
+credit_score,0.07316700700336855,stable
+dti,0.17841343190864967,moderate shift
+ltv,0.07953038983605075,stable
+mi_pct,0.0947461427144634,stable
+log_upb,0.24849234554549798,moderate shift
+rate_spread,0.042611419294741375,stable
+score: Logistic regression,0.04155449910781501,stable
+score: Logistic regression (binned),0.030134716172060216,stable
+score: LightGBM,0.029627617346219756,stable
+score: LightGBM (monotone),0.03004771398325038,stable

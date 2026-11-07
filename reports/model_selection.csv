@@ -1,0 +1,12 @@
+model,settings,valid_auc,seconds
+lr_linear,C=0.01,0.8078,5
+lr_linear,C=0.1,0.8018,4
+lr_linear,C=1.0,0.8024,4
+lr_binned,C=0.01,0.8084,3
+lr_binned,C=0.1,0.8087,3
+lr_binned,C=1.0,0.81,3
+lgbm,"leaves=15, min_child=200, trees=112",0.8235,8
+lgbm,"leaves=15, min_child=1000, trees=36",0.8245,6
+lgbm,"leaves=63, min_child=200, trees=52",0.8245,9
+lgbm,"leaves=63, min_child=1000, trees=7",0.8223,7
+lgbm_monotone,"leaves=63, min_child=200, trees=42",0.8266,8

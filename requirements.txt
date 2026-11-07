@@ -1,0 +1,9 @@
+# Tested with the latest releases (November 2026) and with these minimum versions
+pandas>=2.1
+numpy>=1.26
+scikit-learn>=1.3
+lightgbm>=4.1
+pyarrow>=14
+matplotlib>=3.8
+joblib>=1.3
+shap>=0.44  # optional: only used for the beeswarm plot
