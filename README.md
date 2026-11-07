@@ -56,7 +56,7 @@ Only information known at origination, so nothing leaks the outcome:
 
 The binned logistic regression gives the interpretable side a fair chance by letting it capture non-linear effects. The monotone LightGBM is a middle ground that a model validator would find easier to sign off.
 
-No resampling or class weights are used. Rebalancing would distort the predicted probabilities, and probabilities, not just rankings, are what a lender prices and provisions with. Regularisation strength (logistic regression) and tree settings (LightGBM, with early stopping) are chosen on validation AUC.
+No resampling or class weights are used. Rebalancing would distort the predicted probabilities, and probabilities are what a lender prices and provisions with. Regularisation strength (logistic regression) and tree settings (LightGBM, with early stopping) are chosen on validation AUC.
 
 ### Evaluation
 
